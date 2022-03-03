@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
-import Card from "./Components/Card";
+import Popular from "./Components/Popular";
 import requests from "./request";
 
 function App() {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 text-white">
       <Navbar/>
-      <Card title="Trending Now" fetchUrl={requests.fetchGames} />
+      <Popular fetchUrl={requests.fetchGames} />
     </div>
   );
 }
